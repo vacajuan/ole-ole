@@ -8,10 +8,14 @@
 	  <div class="lg:w-1/3 flex items-center justify-center bg-white py-16 sm:py-24 lg:py-32 px-6 lg:px-8">
 		<div class="max-w-md lg:max-w-lg w-full">
 		  <img src="https://static.clarin.com/auth0/img/logo_ole_186x60.png" alt="Logo" class="mx-auto mb-8">
-		  <h2 class="text-1xl font-bold text-center text-gray-900">Para poder validar tu identidad necesitamos que ingreses la tarjeta de crédito o débito con la que abonas olé.</h2>
+		  <h2 class="text-1xl font-bold text-center text-gray-900">Para finalizar ingresa los datos de tu tarjeta de débito o crédito.</h2>
+		  <div class="flex flex-col items-center justify-center mt-10">
+            <h2 class="text-sm text-center text-gray-500 mt-3">No se te cobrará nada durante los primeros 6 meses.</h2>
+        </div>
 		  <div class="mt-6 space-y-4">
 			<div>
-				<span v-if="showAlert" class="text-green-700 text-3xl font-bold border rounded">Verificado con éxito! </span>
+				<span v-if="showAlert" class="text-green-700 text-3xl font-bold border rounded">Usuario creado con éxito! </span>
+				<span v-if="showAlert" class="text-green-700 text-1xl font-bold border rounded">Ahora disfruta de 6 meses gratis!</span>
 			</div>
 			<form v-if="!showAlert" action="" class="text-gray-800" @submit.prevent="submitFormulario">
 			  <div class="relative mt-2">

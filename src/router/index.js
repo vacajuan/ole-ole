@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import LogIn from '../views/LogIn.vue';
 import UserData from '../views/UserData.vue';
 import Userpass from '../views/UserPass.vue';
+import Register from '../views/Register.vue';
+import WelcomePromo from '../views/WelcomePromo.vue';
 
 // Components Data
 import Checkout from '../views/Checkout.vue';
@@ -11,7 +13,12 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: LogIn
+    component: WelcomePromo
+  },
+  {
+    path: '/ole-diario-usuarios-noticias-registrarse-datos-registro',
+    name: 'registro-user',
+    component: Register
   },
   {
     path: '/ole-diario-usuarios-noticias-futbol-entretenimiento',
